@@ -1,0 +1,39 @@
+name: nitor_machine_test
+description: Github user list.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  http: ^0.12.0+2
+  flutter_bloc: ^2.0.0
+  equatable: ^0.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+
+
+  fonts:
+    - family : Acme
+      fonts:
+        - asset: assets/fonts/Acme-Regular.ttf
+
+    - family : Alatsi
+      fonts:
+        - asset : assets/fonts/Alatsi-Regular.ttf   
+
+    - family : Gafata
+      fonts:
+        - asset : assets/fonts/Gafata-Regular.ttf
