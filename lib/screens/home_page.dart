@@ -147,7 +147,7 @@ Widget buildUserList(List<User> users) {
               children: <Widget>[
                 Text('id:' + users[pos].id.toString()),
                 Spacer(),
-                Text("Score:"),
+                Text("Score:" + users[pos].score.toString()),
                 Spacer()
               ],
             ),

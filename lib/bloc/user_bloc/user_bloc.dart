@@ -27,7 +27,7 @@ class UserBloc extends Bloc<UserEvent, UserState>{
     }else if (event is FetchUserSearchEvent){
       yield UserLoadingState();
       try{
-        List<User> users = await userRepository.getAllSearchedUsers(event.name);
+        List<User> users = await userRepository.getAllSearchedUsers(event.name.toString());
         yield UserLoadedState(users: users);
       }catch(e){
         yield UserErrorState(message: e.toString());

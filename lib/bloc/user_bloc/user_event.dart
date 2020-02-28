@@ -10,12 +10,10 @@ class FetchUserEvent extends UserEvent {
 
 class FetchUserSearchEvent extends UserEvent{
   
-  FetchUserSearchEvent(name);
-
-  String get name => name;
+  final String name;
+  FetchUserSearchEvent(this.name);
   
   @override
-  // TODO: implement props
-  List<Object> get props => null;
+  List<Object> get props => [name];
   
 }

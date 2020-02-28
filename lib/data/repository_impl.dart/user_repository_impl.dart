@@ -10,6 +10,7 @@ class UserRepositoryImpl extends UserRepository {
     List<User> userList = new List();
     var response = await http.get("https://api.github.com/search/users?q="+ name);
     if(response.statusCode == 200){
+      print(response.body);
       var searchedUser = json.decode(response.body);
       List searchedList = searchedUser["items"];
        for (var obj in searchedList) {

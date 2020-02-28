@@ -16,7 +16,7 @@ class UserLoadingState extends UserState {
 }
 
 class UserLoadedState extends UserState {
-
+ 
   List<User> users;
 
   UserLoadedState({@required this.users});

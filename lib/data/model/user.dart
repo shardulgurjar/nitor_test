@@ -1,7 +1,7 @@
 class User {
   String _name;
   int _id;
-  int _score;
+  double _score;
   String _avatorUrl;
   String _profileUrl;
   String _followerUrl;
@@ -28,7 +28,7 @@ class User {
     this._name = name;
   }
 
-  set score(int score) {
+  set score(double score) {
     this._score = score;
   }
 
@@ -81,7 +81,7 @@ class User {
 
   String get name => this._name;
 
-  int get score => this._score;
+  double get score => this._score;
 
   String get profileUrl => this._profileUrl;
 
